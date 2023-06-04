@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+
+/* color pallete
+
+#edf7f6
+#2660a4
+
+*/
+
+
+/*
+Plus icon
+
+<i class="fa-solid fa-plus"></i>
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2660a4;
+}
+
+.container {
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.todoList-title h1 {
+    color: #edf7f6;
+    margin: 20px 0px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.todoList-title span i {
+    position: absolute;
+    top: 8px;
+    margin-left: 12px;
+    font-size: 2.8rem;
+}
+
+.todoList-add {
+    margin: 25px 0px;
+    position: relative;
+}
+
+.todoList-add input[type=text] {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.todoList-add button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0px;
+}
+
+.todoList-add button i {
+    color: #2660a4;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.todoList {
+    position: relative;
+    left: 20px;
+    max-width: 450px;
+    margin: auto;
+    background-color: #edf7f6;
+    border-radius: 5px;
+    color: #2660a4;
+    padding: 20px 40px;
+}
+
+
+/*
+.todoList ul li {
+    list-style-type: none;
+    line-height: 2;
+    padding: 15px 0px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoList ul li i {
+    background-color: #2660a4;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0px 5px;
+} */
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.itemBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item.completed p {
+    text-decoration: line-through;
+}
+
+.itemBtn i {
+    background-color: #2660a4;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.todoList ul li.checked {
+    text-decoration: line-through;
+}
